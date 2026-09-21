@@ -1,0 +1,124 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Express</title>
+        <link rel="stylesheet" href="estilos.css">
+        <meta name="description" content="Una descripción concisa y clara de tu sitio web.">
+        <meta name="keywords" content="palabra1, palabra2,palabra3">
+        <meta name="author" content="Nombre del Autor">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+    </head>
+
+    <body>
+        <header>
+            <h1> Express: Somos una empresa de maquinas expendedoras de comida saludable</h1>
+           <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                 <a class="navbar-brand" href="Untitled-1.html">Express</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                <a class="nav-link" href="Ubi.html">Ubicaciones</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Menu.html">Catalogo</a></li>
+                        
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Busqueda.html">Carrito</a></li>
+                    </ul>
+                    </li>
+                        <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                    </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+                 </div>
+            </nav>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Quienes somos?
+                    </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>En Express revolucionamos el concepto de máquinas expendedoras ofreciendo alternativas de alimentación fresca, nutritiva y de alta calidad. Nos apasiona hacer que comer bien sea rápido, accesible y conveniente para personas con estilos de vida activos, transformando los espacios de trabajo y estudio en entornos más saludables.
+                        </div>
+                     </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Nuestra misión
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Transformar los hábitos de alimentación diaria facilitando el acceso inmediato a snacks y comidas balanceadas de origen responsable. Nos comprometemos a promover el bienestar y la energía de nuestras comunidades a través de tecnología moderna en vending y opciones gastronómicas que cuidan tu salud..</strong> 
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Nuestra trayectoria
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Nacimos de la necesidad de erradicar la comida chatarra de los espacios cotidianos. A lo largo de nuestro camino, hemos consolidado alianzas con proveedores locales y marcas comprometidas con la salud, expandiendo nuestra red de máquinas expendedoras inteligentes en oficinas, universidades y centros clave. Hoy, nos posicionamos como el aliado confiable para quienes buscan nutrición rápida sin comprometer la calidad.</strong> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action="https://formspree.io/f/xnpnnbwg" method="POST" class="p-4 border rounded shadow-sm bg-light">
+  <div class="mb-3">
+    <label for="email" class="form-label">Correo Electrónico</label>
+    <input type="email" name="email" id="email" class="form-control" placeholder="tu@email.com" required>
+  </div>
+  
+  <div class="mb-3">
+    <label for="message" class="form-label">Mensaje</label>
+    <textarea name="message" id="message" rows="4" class="form-control" placeholder="Escribe tu mensaje aquí..." required></textarea>
+  </div>
+  
+  <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+</form>
+<!-- Botón Flotante de WhatsApp -->
+<a href="https://wa.me/521234567890?text=Hola,%20me%20gustaría%20obtener%20más%20información" 
+   class="btn btn-success position-fixed bottom-0 end-0 m-4 rounded-circle p-3 shadow-lg d-flex align-items-center justify-content-center" 
+   style="width: 60px; height: 60px; z-index: 1000;" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   aria-label="Contactar por WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.165-.395-.333-.341-.457-.347-.114-.007-.247-.007-.38-.007a.73.73.00 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.17-.478 1.338-.94.165-.463.165-.859.116-.94-.048-.083-.182-.133-.38-.232"/>
+  </svg>
+</a>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+           <script src="script.js"></script>

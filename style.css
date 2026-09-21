@@ -1,0 +1,265 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    background-color: white;
+    margin: 0;
+    padding: 0 20px;
+}
+
+header {
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: white;
+    border-bottom: 2px solid #1E3D2F;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 24px 0;
+    padding: 10px 0;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+
+    color: black;
+    text-align: left;
+    letter-spacing: 2px;
+    margin: 30px 0 16px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #2E7D32;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 24px 0 12px 0;
+    padding-left: 10px;
+    border-left: 4px solid #2E7D32;
+}
+
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    letter-spacing: 2px;
+    margin: 20px 0 10px 0;
+    padding-left: 8px;
+    border-left: 3px solid #1E3D2F;
+}
+
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0 0 16px 0;
+    padding: 0 15px;
+}
+
+ul {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #2E7D32;
+    text-align: left;
+    letter-spacing: 2px;
+    margin: 0 0 20px 0;
+    padding: 15px 15px 15px 30px;
+    border: 1px solid #2E7D32;
+}
+
+table {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    border: 1px solid #1E3D2F;
+    margin: 20px 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+table th,
+table td {
+    padding: 10px 12px;
+    border: 1px solid #1E3D2F;
+}
+
+/* 1. Contenedor principal de la sección del menú */
+.menu-section {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* 2. Rejilla para distribuir los platillos en filas de 3 columnas */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+/* 3. Estilo de cada tarjeta de producto */
+.menu-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left; /* Alineación limpia a la izquierda */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto al pasar el cursor */
+.menu-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* 4. Título del producto */
+.menu-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* 5. Descripción del producto */
+.menu-card p {
+  margin: 0 0 20px 0;
+  font-size: 0.92rem;
+  color: #555555;
+  line-height: 1.5;
+  flex-grow: 1; /* Mantiene la misma altura entre tarjetas */
+}
+
+/* 6. Pie de tarjeta (Precio y Calorías) */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 12px;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #198754; /* Verde representativo */
+}
+
+.calories {
+  font-size: 0.85rem;
+  color: #777777;
+  font-weight: 500;
+}
+
+/* Layout Principal: Organiza la barra lateral y el mapa */
+.locations-container {
+  display: flex;
+  max-width: 1200px;
+  height: 550px;
+  margin: 30px auto;
+  padding: 0 20px;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar con el listado de ubicaciones */
+.locations-sidebar {
+  flex: 1;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.locations-sidebar h2 {
+  font-size: 1.4rem;
+  color: #1a1a1a;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.locations-sidebar p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Tarjetas individuales de cada ubicación */
+.location-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.location-card:hover, .location-card.active {
+  border-color: #198754;
+  box-shadow: 0 4px 10px rgba(25, 135, 84, 0.1);
+}
+
+.location-card h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.05rem;
+  color: #2c3e50;
+}
+
+.location-card p {
+  margin: 0 0 10px 0;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.status.open {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #198754;
+}
+
+/* Contenedor adaptativo del Mapa */
+.map-container {
+  flex: 2;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Diseño Responsive para celulares */
+@media (max-width: 768px) {
+  .locations-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .map-container {
+    height: 350px;
+  }
+}
